@@ -4,105 +4,119 @@
 <head>
   <meta charset="utf-8" />
   <link rel="stylesheet" href="main.css" />
+  <script src="menu.js"></script>
   <title>The Odd Visual Stuff</title>
 </head>
 
 <body>
 
 
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <!-- Use any element to open the sidenav -->
+  <span onclick="openNav()">OPEN</span>
+
+  <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+  <div id="main">
+    <!-- Contact -->
+    <section>
+      <div class="contact">
+        <h1>Contact</h1>
+        <p>
+          Hier staat de contact info.
+        </p>
+      </div>
+    </section>
 
 
-  <!-- Contact -->
-  <section>
-    <div class="contact">
-      <h1>Contact</h1>
-      <p>
-        Hier staat de contact info.
-      </p>
-    </div>
-  </section>
 
-
-
-  <!-- Info -->
-  <section>
-    <div class="services">
-      <h1>Services</h1>
-      <p>
-        Hier staat de services die ik bied.
-      </p>
-    </div>
-    <div class="missie">
-      <h1>De Missie</h1>
-      <p>
-        Hier staat het classeeee ee.
-      </p>
-    </div>
-
-  </section>
-
-
-  <!-- Homepage -->
-  <header>
-    <section class="container">
-
-
-        <h1>The Odd Visual Stuff</h1>
-        <h3>(inter)planetary Creative Design services</h3>
+    <!-- Info -->
+    <section>
+      <div class="services">
+        <h1>Services</h1>
+        <p>
+          Hier staat de services die ik bied.
+        </p>
+      </div>
+      <div class="missie">
+        <h1>De Missie</h1>
+        <p>
+          Hier staat het classeeee ee.
+        </p>
+      </div>
 
     </section>
-  </header>
 
 
-<!-- Background Image Home -->
-<section class="background.image">
-  <img src="assets/background.jpg" />
-</section>
+    <!-- Homepage -->
+    <header>
+      <section class="container">
 
 
+          <h1>The Odd Visual Stuff</h1>
+          <h3>(inter)planetary Creative Design services</h3>
 
-  <!-- Geselecteerd Werk -->
-  <section>
-    <div class="heading">
-      <h2>Geselecteerd Werk</h2>
-    </div>
-
-
-    <div class="wyws"><h1>Werk 1</h1><p>Hier staat project 1</p>
-      <img src="assets/wyws_portfolio_hero_frontpage.jpg" />
-
-    </div>
+      </section>
+    </header>
 
 
-    <div class="mmi"><h1>Werk 2</h1><p>Hier staat project 2</p>
-      <img src="assets/mm&i_portfolio_hearo_frontpage.jpg" />
-    </div>
-
-
-    <div class="tmb"><h1>Werk 3</h1><p>Hier staat project 3</p>
-      <img src="assets/tmb_portfolio_hero_frontpage.jpg">
-    </div>
-
-
-    <div class="kvh"><h1>Werk 4</h1><p>Hier staat project 4</p>
-      <img src="assets/kvh_portfolio_hero_frontpage.jpg">
-    </div>
-
-    <div class="tfu"><h1>Werk 5</h1><p>Hier staat project 5</p>
-      <img src="assets/tfu_portfolio_hero_frontpage.jpg">
-    </div>
-
+  <!-- Background Image Home -->
+  <section class="background.image">
+    <img src="assets/background.jpg" />
   </section>
 
 
 
+    <!-- Geselecteerd Werk -->
+    <section>
+      <div class="heading">
+        <h2>Geselecteerd Werk</h2>
+      </div>
 
-  <!-- footer -->
-  <footer>
-    <small></small>
 
-  </footer>
-</div>
+      <div class="wyws"><h1>Werk 1</h1><p>Hier staat project 1</p>
+        <img src="assets/wyws_portfolio_hero_frontpage.jpg" />
+
+      </div>
+
+
+      <div class="mmi"><h1>Werk 2</h1><p>Hier staat project 2</p>
+        <img src="assets/mm&i_portfolio_hearo_frontpage.jpg" />
+      </div>
+
+
+      <div class="tmb"><h1>Werk 3</h1><p>Hier staat project 3</p>
+        <img src="assets/tmb_portfolio_hero_frontpage.jpg">
+      </div>
+
+
+      <div class="kvh"><h1>Werk 4</h1><p>Hier staat project 4</p>
+        <img src="assets/kvh_portfolio_hero_frontpage.jpg">
+      </div>
+
+      <div class="tfu"><h1>Werk 5</h1><p>Hier staat project 5</p>
+        <img src="assets/tfu_portfolio_hero_frontpage.jpg">
+      </div>
+
+    </section>
+
+
+
+
+    <!-- footer -->
+    <footer>
+      <small></small>
+
+    </footer>
+
+  </div>
+
 
 
 </body>
