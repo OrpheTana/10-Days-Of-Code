@@ -1,0 +1,215 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+/**,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}*/
+
+
+/*
+  ========================================
+  Menu
+  ========================================
+*/
+.nav{
+	background-color: rgb(41, 168, 30);
+	text-align: center;
+
+}
+
+
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+
+h1 {
+	color: rgb(255, 255, 255);
+	font-size: 20px;
+	position: absolute;
+	text-align: center;
+}
+
+h3{
+	color: rgb(255, 255, 255);
+	font-size: 20px;
+	position: absolute;
+}
+
+p{
+	position: absolute;
+}
+
+/*
+========================================
+Contact
+========================================
+*/
+
+.contact {
+	background-color: rgba(97, 97, 97, 1);
+	height: 262px; width: auto;
+}
+
+.services {
+	background-color: rgba(120, 120, 120, 1);
+	height: 262px; width: auto;
+}
+
+.missie {
+	background-color: rgba(158, 158, 158, 1);
+	height: 262px; width: auto;
+}
+
+/*
+========================================
+Homepage
+========================================
+*/
+
+.home {
+	background-color: rgba(181, 181, 181, 1);
+	height: auto; width: auto;
+}
+
+/*
+  ========================================
+  Projects
+  ========================================
+*/
+
+.wyws {
+	height: auto; width: auto;
+	background: linear-gradient(180deg, rgba(169,169,169,0) 0%, rgba(141,151,30,0.54) 67.34%, #000000 100%);
+
+}
+
+.mmi {
+	height: auto; width: auto;
+	background: linear-gradient(180deg, rgba(0,0,0,0.63) 0%, rgba(30,62,151,0.85) 48.75%, #000000 100%);
+}
+
+.tmb {
+	height: auto; width: auto;
+	background: linear-gradient(180deg, rgba(0,0,0,0.63) 0%, rgba(50,50,50,0.85) 48.75%, #000000 100%);
+}
+
+.kvh {
+	height: auto; width: auto;
+	background: linear-gradient(180deg, rgba(0,0,0,0.63) 0%, rgba(195,66,54,0.85) 48.75%, #000000 100%);
+}
+
+.tfu {
+	height: auto; width: auto;
+	background: linear-gradient(180deg, rgba(0,0,0,0.63) 0%, rgba(53,131,203,0.85) 48.75%, #000000 100%);
+}
+
+
+/*
+  ========================================
+  Image
+  ========================================
+*/
+
+img {
+	position: relative;
+	width: 100%;
+  z-index: -1;
+}
+
+.background.image{
+	position: relative;
+	width: 100%;
+	z-index: -1;
+}
+
+/*
+  ========================================
+  Navigation
+  ========================================
+*/
+
+.navigation {
+	list-style: none;
+    background: #25d74c;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.site-wrap {
+    min-width: 100%;
+    min-height: 100%;
+    background-color: #fff
+    position: relative;
+    top: 0;
+    bottom: 100%;
+    left: 0;
+    z-index: 1;
