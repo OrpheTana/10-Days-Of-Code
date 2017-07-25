@@ -69,15 +69,67 @@ table {
 
 /*
   ========================================
-  Menu
+  Navigation
   ========================================
 */
-.nav{
-	background-color: rgb(41, 168, 30);
-	text-align: center;
 
+.navigation {
+    list-style: none;
+    background: #111;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
 }
 
+.site-wrap {
+    min-width: 100%;
+    min-height: 100%;
+    background-color: #fff;
+    position: relative;
+    top: 0;
+    bottom: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+.nav-trigger {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+label[for="nav-trigger"] {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    z-index: 2;
+}
+
+label[for="nav-trigger"] {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>");
+    background-size: contain;
+}
+
+.nav-trigger:checked + label {
+    left: 215px;
+}
+
+.nav-trigger:checked ~ .site-wrap {
+    left: 200px;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+}
+
+.nav-item {
+	font-size: 20px;
+	padding: 10px 50px 10px;
+}
 
 /*
   ========================================
@@ -87,20 +139,22 @@ table {
 
 h1 {
 	color: rgb(255, 255, 255);
-	font-size: 20px;
+	font-size: 40px;
 	position: absolute;
 	text-align: center;
 }
 
-h3{
+/*h3{
 	color: rgb(255, 255, 255);
 	font-size: 20px;
 	position: absolute;
-}
+}*/
 
 p{
 	position: absolute;
 }
+
+
 
 /*
 ========================================
@@ -143,7 +197,6 @@ Homepage
 .wyws {
 	height: auto; width: auto;
 	background: linear-gradient(180deg, rgba(169,169,169,0) 0%, rgba(141,151,30,0.54) 67.34%, #000000 100%);
-
 }
 
 .mmi {
@@ -184,32 +237,3 @@ img {
 	width: 100%;
 	z-index: -1;
 }
-
-/*
-  ========================================
-  Navigation
-  ========================================
-*/
-
-.navigation {
-	list-style: none;
-    background: #25d74c;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 0;
-}
-
-.site-wrap {
-    min-width: 100%;
-    min-height: 100%;
-    background-color: #fff
-    position: relative;
-    top: 0;
-    bottom: 100%;
-    left: 0;
-    z-index: 1;
